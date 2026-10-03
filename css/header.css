@@ -31,15 +31,44 @@ nav {
     display: none;
 }
 
-.list-link {
+.list-links {
     list-style: none;
 }
 
-.list-link li {
+.list-links li {
     margin: 16px 0;
 }
 
 .list-link li a{
     color: var(--text-secondary-color);
     text-decoration: none;
+    font-weight: var(--menu-font-weight);
+    font-size: 24px;
+    
+}
+
+@media screen and (min-width: 768px) {
+    .navigation-menu {
+        margin-top: 0;
+    }
+
+    .naigation-menu label {
+        display: none;
+    }
+
+    .naigation-menu nav{
+        display: block;
+    }
+
+    .navigation-menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+    .navigation-menu li{
+    margin: 0;
+}
+
 }
