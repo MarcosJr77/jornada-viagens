@@ -7,10 +7,6 @@
     width: 100%;
 }
 
-.payments .content-container{
-    display: flex;
-}
-
  .payments .content-container .image-gallery .image.first {
     background: url(../img/gallery1-mobile.png) no-repeat;
     background-size: cover;
@@ -49,12 +45,14 @@
 
 @media screen and (min-width:1440px){
     .payments .content-container {
-    justify-content: space-between;
+        display: flex;
+        justify-content: space-between;
 }
-    .payments .text-content {
+    .payments .content-container .text-content {
         width: 360px;
     }
-    .payments .image-gallery {
+    .payments .content-container .image-gallery {
         width: 790px;
+        margin: 0;
     }
 }
